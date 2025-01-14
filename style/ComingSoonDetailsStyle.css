@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ebbfbf;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  text-align: start;
+  background-image: linear-gradient(#230405 50%, black);
+}
+
+.movie-details{
+  box-sizing: border-box;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.movie-description{
+  flex: 1;
+  margin-top: 70px;
+  padding: 30px;
+  color: white;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.movie-description h1{
+  color: #ebbfbf;
+  font-size: 40px;
+  text-shadow: 1px -1px 0px white;
+  margin-bottom: 10px;
+}
+
+.movie-trailer{
+  flex: 1;
+}
+
+.movie-trailer #trailer{
+  width: 950px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.sound-button{
+  border-radius: 50%;
+  background-color: rgba(147, 147, 147, 0.5);
+  width: 50px;
+  height: 50px;
+  padding-top: 5px;
+  border: none;
+  position: absolute;
+  right: 30px;
+  top: 440px;
+}
+
+.sound-button img{
+  width: 30px;
+}
+
+.movie-details-gradient-left{
+  position: absolute;
+  width: 300px;
+  height: 535px;
+  left: 569px;
+  top: 0;
+  background-image: linear-gradient(to right, #230405, transparent);
+}
+
+.movie-details-gradient-bottom{
+  position: absolute;
+  width: 950px;
+  height: 100px;
+  right: 0;
+  top: 435px;
+  background-image: linear-gradient(to top, #230405, transparent);
+}
+
+.play-button{
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+}
+
+.play-button button{
+  width: 135px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: #ebbfbf;
+  color: #230405;
+  font-weight: bold;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+.play-button button:hover{
+  background-color:#e98f8f;
+  cursor: pointer;
+}
+
+.play-button img{
+  margin-right: 15px;
+}
+
+.reserved button{
+  background-color: transparent;
+  color: #ebbfbf;
+  border: #ebbfbf solid;
+}
+/* End of Movie Details*/
+
+/* Recommendation */
+.recommendation {
+  position: relative;
+  margin: 50px 50px;
+}
+
+.recommendation-title {
+  width: fit-content;
+}
+
+.recommendation-title h2 {
+  color: #ebbfbf;
+  margin-bottom: 20px;
+
+  animation-name: text-fadeIn;
+  animation-timing-function: ease;
+  animation-timeline: view();
+  animation-range-start: 1px;
+  animation-range-end: 300px;
+}
+
+.recommendation-movie {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recommendation-movie-list img {
+  width: 190px;
+  height: 250px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  transition: all 0.7s ease;
+
+  animation-name: image-zoomIn;
+  animation-timing-function: ease;
+  animation-timeline: view();
+  animation-range-start: 1px;
+  animation-range-end: 300px;
+}
+
+.description {
+  width: 190px;
+  height: 30px;
+  color: #ebbfbf;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* End of Recommendation */
+
+/* Navigation Footer */
+footer {
+  margin-top: 120px;
+}
+
+.nav-footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+  animation-name: none;
+}
+
+.nav-icon img {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  flex-shrink: 0;
+  opacity: 1;
+  scale: 1;
+  transition: all 0.7s ease;
+  animation-name: none;
+}
+
+.nav-icon img[target="reservationIcon"] {
+  width: 35px;
+  height: 35px;
+}
+
+.nav-icon img:hover {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+
+.nav-icon img[target="reservationIcon"]:hover {
+  width: 45px;
+  height: 45px;
+}
+/* End of Navigation Footer */
+
+/* Back To Top - Go To Bottom */
+.page-button {
+  position: fixed;
+  bottom: 100px;
+  right: 80px;
+}
+
+.back-to-top button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(92, 91, 91, 0.3);
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+  transform: rotate(-90deg);
+  margin-bottom: 10px;
+}
+
+.back-to-top[target="back-to-bottom"] {
+  transform: rotate(180deg);
+}
+
+.back-to-top button:hover {
+  text-shadow: 1px -1px 5px #ebbfbf;
+}

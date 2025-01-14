@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ebbfbf;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  text-align: start;
+  background-image: linear-gradient(#230405 50%, black);
+}
+
+/* Watch */
+.watch{
+  margin: 80px 80px 10px 80px;
+  display: flex;
+}
+
+.watch-video video{
+  width: 950px;
+  height: auto;
+}
+
+.episode{
+  width: 350px;
+  height: 495px;
+  background-color: #330405;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.episode h2{
+  margin-bottom: 10px;
+  color: #ebbfbf;
+}
+
+.episode p{
+  margin-bottom: 20px;
+  padding-left: 5px;
+  border-left: #ebbfbf 3px solid;
+}
+
+.episode-list{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.episode-list a{
+  width: 50px;
+  height: 40px;
+  margin: 0px 10px 10px 0px;
+}
+
+.episode-number{
+  color: #230405;
+  font-weight: bold;
+  background-color: #ebbfbf;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+  margin: 0px 10px 10px 0px;
+  transition: background-color 0.3s;
+}
+
+.episode-number:hover{
+  background-color: #e78e8e;
+}
+
+.episode-number.active-episode{
+  background-color: #e78e8e;
+  border: black 2px solid;
+  outline: white 2px solid;
+  border-radius: 5px;
+}
+/* End of Watch */
+
+/* Movie Description */
+.movie-description{
+  width: 950px;
+  margin-left: 80px;
+
+  animation-name: text-fadeIn;
+  animation-timing-function: ease;
+  animation-timeline: view();
+  animation-range-start: 1px;
+  animation-range-end: 300px;
+}
+
+.movie-description h1{
+  color: #ebbfbf;
+  font-size: 40px;
+  text-shadow: 1px -1px 0px white;
+}
+/* End of Movie Description */
+
+/* Recommendation */
+.recommendation {
+  position: relative;
+  margin: 50px 80px;
+}
+
+.recommendation-title {
+  width: fit-content;
+}
+
+.recommendation-title h2 {
+  color: #ebbfbf;
+  margin-bottom: 20px;
+
+  animation-name: text-fadeIn;
+  animation-timing-function: ease;
+  animation-timeline: view();
+  animation-range-start: 1px;
+  animation-range-end: 300px;
+}
+
+.recommendation-movie {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.recommendation-movie-list img {
+  width: 190px;
+  height: 250px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  transition: all 0.7s ease;
+
+  animation-name: image-zoomIn;
+  animation-timing-function: ease;
+  animation-timeline: view();
+  animation-range-start: 1px;
+  animation-range-end: 300px;
+}
+
+.description {
+  width: 190px;
+  height: 30px;
+  color: #ebbfbf;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* End of Recommendation */
+
+/* Comment Section */
+.comment{
+  margin: 50px 80px;
+  border-top: #ebbfbf solid;
+  border-width: 1px;
+}
+
+.comment h2{
+  margin: 30px 0px;
+}
+
+#fname{
+  background-color: transparent;
+  width: 400px;
+  height: 25px;
+  padding: 10px;
+  border: #ebbfbf solid 2px;
+  color: white;
+}
+
+#comment-form label{
+  margin-right: 20px;
+}
+
+#comment-form textarea{
+  width: 950px;
+  height: 100px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: #ebbfbf solid 2px;
+}
+
+#comment-form button{
+  width: 70px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: #ebbfbf solid 2px;
+  color: white;
+  margin-top: 20px;
+  display: inline;
+}
+
+#cancelComment{
+  margin-left: 810px;
+  margin-right: 20px;
+}
+
+#comment-form button:hover{
+  background-color: #e78e8e;
+  border: #e78e8e solid 2px;
+  font-weight: bold;
+  color: #230405;
+  cursor: pointer;
+}
+/* End of Comment Section */

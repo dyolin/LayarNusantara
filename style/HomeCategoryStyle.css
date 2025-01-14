@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ebbfbf;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  text-align: start;
+  background-image: linear-gradient(#230405, black);
+}
+
+/* Top Picks For You */
+.home-catalogue {
+  padding: 0px 50px;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+
+.home-catalogue-title {
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
+.home-catalogue-title h2 {
+  margin-bottom: 10px;
+  color: #ebbfbf;
+  text-shadow: 1px -1px 0px white;
+  font-size: 36px;
+}
+
+.home-catalogue-title h2:hover {
+  text-shadow: 1px -1px 50px white;
+}
+
+.home-catalogue-movie {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.home-catalogue-movie-list {
+  margin-bottom: 50px;
+}
+
+.home-catalogue-movie-list img {
+  position: absolute;
+  width: 190px;
+  height: 250px;
+  margin: 10px;
+  flex-shrink: 0;
+  transition: all 0.7s ease;
+}
+
+.home-catalogue-movie-list img:hover {
+  width: 230px;
+  height: 310px;
+  margin: 5px;
+  transform: translate(-15px, -10px);
+  box-shadow: 0px 0px 30px #ebbfbf;
+}
+
+.desc {
+  width: 190px;
+  height: 30px;
+  margin: 265px 10px 0px 10px;
+  color: #ebbfbf;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* End of Top Picks For You */
+
+/* Navigation Footer */
+footer {
+  margin-top: 120px;
+}
+
+.nav-footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+  animation-name: none;
+}
+
+.nav-icon img {
+  width: 25px;
+  height: 25px;
+  margin: 10px;
+  flex-shrink: 0;
+  opacity: 1;
+  scale: 1;
+  transition: all 0.7s ease;
+  animation-name: none;
+}
+
+.nav-icon img[target="reservationIcon"] {
+  width: 35px;
+  height: 35px;
+}
+
+.nav-icon img:hover {
+  width: 35px;
+  height: 35px;
+  margin: 5px;
+}
+
+.nav-icon img[target="reservationIcon"]:hover {
+  width: 45px;
+  height: 45px;
+}
+/* End of Navigation Footer */
+
+/* Back To Top - Go To Bottom */
+.page-button {
+  position: fixed;
+  bottom: 100px;
+  right: 80px;
+}
+
+.back-to-top button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(92, 91, 91, 0.3);
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+  transform: rotate(-90deg);
+  margin-bottom: 10px;
+}
+
+.back-to-top[target="back-to-bottom"] {
+  transform: rotate(180deg);
+}
+
+.back-to-top button:hover {
+  text-shadow: 1px -1px 5px #ebbfbf;
+}
