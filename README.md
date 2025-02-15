@@ -18,5 +18,4 @@ Films Category can be accessed in the dropdown at the navigation bar.\
 **1. Movie**\
 **2. Web Series**\
 **3. TV Series**\
-**4. Variety Shows**\
-
+**4. Variety Shows**
